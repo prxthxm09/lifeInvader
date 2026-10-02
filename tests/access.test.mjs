@@ -16,7 +16,7 @@ test('Only approved IDs can enter; email review is read-only until a deliberate 
  const tampered=await f.request('/review',{method:'POST',headers:{Origin:env.APP_URL},body:body({token:token+'x',decision:'approved'})});assert.equal(tampered.status,410);
  const approve=await f.request('/review',{method:'POST',headers:{Origin:env.APP_URL},body:body({token,decision:'approved'})});assert.equal(approve.status,200);
  assert.equal((await f.request(reviewPath)).status,410);assert.equal((await f.request('/review',{method:'POST',headers:{Origin:env.APP_URL},body:body({token,decision:'rejected'})})).status,410);
- const auth=await f.request('/',{headers:{cookie}});assert.equal(auth.status,200);assert(auth.text.includes('<b>Venom</b>'));
+ const auth=await f.request('/',{headers:{cookie}});assert.equal(auth.status,200);assert(auth.text.includes('alt="Lifeinvader"'));
  const data=await f.request('/catalog.json',{headers:{cookie}});assert.equal(data.status,200);assert(JSON.parse(data.text).vehicles.length===441);
  assert.equal((await f.request('/protected/catalog.json',{headers:{cookie}})).status,404);assert.equal((await f.request('/index.mjs',{headers:{cookie}})).status,404);
  assert.equal((await f.request('/catalog.json',{headers:{cookie:cookie+'tampered'}})).status,401);
