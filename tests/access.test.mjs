@@ -1,0 +1,38 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';
+import {createApp} from '../index.mjs';import {sign,verify} from '../lib/security.mjs';
+const user={id:'123456789012345678',username:'requester',displayName:'Requester'};
+function memory(){const data=new Map(),users=new Set();return {data,get:async k=>data.get(k)??null,set:async(k,v)=>{data.set(k,v);return 'OK';},setNX:async(k,v)=>{if(data.has(k))return false;data.set(k,v);return true;},del:async k=>data.delete(k),take:async k=>{const v=data.get(k);data.delete(k);return v??null;},increment:async k=>{const n=(data.get(k)||0)+1;data.set(k,n);return n;},decide:async(id,nonce,status)=>{const k='venom:access:'+id,r=data.get(k);if(!r||r.status!=='pending'||r.nonce!==nonce)return false;data.set(k,{...r,status,nonce:null});return true;},users:async()=>[...users],addUser:async id=>users.add(id)};}
+const env={APP_URL:'https://venom.example',DISCORD_CLIENT_ID:'123456789012345679',DISCORD_CLIENT_SECRET:'test',SESSION_SECRET:'a'.repeat(96),UPSTASH_REDIS_REST_URL:'https://example.upstash.io',UPSTASH_REDIS_REST_TOKEN:'test',RESEND_API_KEY:'test',MAIL_FROM:'access@example.com',APPROVAL_EMAIL:'owner@example.com',ADMIN_DISCORD_IDS:'222222222222222222'};
+async function fixture(options={}){const store=memory(),emails=[],state={user:{...user},failMail:false};const app=createApp({env:options.env||env,store,discord:{identify:async()=>state.user},mailer:{request:async(...args)=>{if(state.failMail)throw Error('mail failed');emails.push(args);}}});const server=app.listen(0);await new Promise(r=>server.once('listening',r));const base='http://127.0.0.1:'+server.address().port;return {store,emails,state,close:()=>new Promise(r=>server.close(r)),async request(path,options={}){const r=await fetch(base+path,{redirect:'manual',...options});const text=await r.text();return {r,text,status:r.status,location:r.headers.get('location'),cookie:r.headers.get('set-cookie')};}};}
+async function login(f,previousCookie=''){const start=await f.request('/auth/discord');assert.equal(start.status,302);const state=new URL(start.location).searchParams.get('state');const stateCookie=start.cookie.split(';')[0];const cb=await f.request('/auth/discord/callback?code=mock&state='+state,{headers:{cookie:stateCookie+(previousCookie?'; '+previousCookie:'')}});const m=cb.cookie.match(/(__Host-venom-session=[^;]+)/);return {cookie:m[1],state,stateCookie};}
+const body=o=>new URLSearchParams(o);
+test('Only approved IDs can enter; email review is read-only until a deliberate POST',async()=>{const f=await fixture();try{
+ for(const path of ['/','/catalog.json','/js/app.mjs','/protected/index.html','/.env']){const r=await f.request(path);assert.equal(r.status,path==='/'?302:401);assert(!r.text.includes('Adder'));assert.equal(r.r.headers.get('cache-control'),'private, no-store, max-age=0');}
+ const {cookie,state,stateCookie}=await login(f);assert.equal(f.emails.length,1);assert.equal(f.emails[0][0].id,user.id);
+ assert.equal((await f.request('/catalog.json',{headers:{cookie}})).status,403);
+ const repeat=await f.request('/auth/discord/callback?code=mock&state='+state,{headers:{cookie:stateCookie}});assert.equal(repeat.status,400);
+ const link=new URL(f.emails[0][1]);const reviewPath=link.pathname+link.search;const token=link.searchParams.get('token');const review=await f.request(reviewPath);assert.equal(review.status,200);assert(review.text.includes('Approve'));assert.equal((await f.store.get('venom:access:'+user.id)).status,'pending');
+ const cross=await f.request('/review',{method:'POST',headers:{Origin:'https://evil.example'},body:body({token,decision:'approved'})});assert.equal(cross.status,403);
+ const tampered=await f.request('/review',{method:'POST',headers:{Origin:env.APP_URL},body:body({token:token+'x',decision:'approved'})});assert.equal(tampered.status,410);
+ const approve=await f.request('/review',{method:'POST',headers:{Origin:env.APP_URL},body:body({token,decision:'approved'})});assert.equal(approve.status,200);
+ assert.equal((await f.request(reviewPath)).status,410);assert.equal((await f.request('/review',{method:'POST',headers:{Origin:env.APP_URL},body:body({token,decision:'rejected'})})).status,410);
+ const auth=await f.request('/',{headers:{cookie}});assert.equal(auth.status,200);assert(auth.text.includes('<b>Venom</b>'));
+ const data=await f.request('/catalog.json',{headers:{cookie}});assert.equal(data.status,200);assert(JSON.parse(data.text).vehicles.length===441);
+ assert.equal((await f.request('/protected/catalog.json',{headers:{cookie}})).status,404);assert.equal((await f.request('/index.mjs',{headers:{cookie}})).status,404);
+ assert.equal((await f.request('/catalog.json',{headers:{cookie:cookie+'tampered'}})).status,401);
+ assert.equal((await f.request('/logout',{method:'POST',headers:{cookie,Origin:env.APP_URL},body:body({csrf:'forged'})})).status,403);
+ const account=await f.request('/account',{headers:{cookie}});const csrf=account.text.match(/name="csrf" value="([^"]+)"/)[1];
+ assert.equal((await f.request('/logout',{method:'POST',headers:{cookie,Origin:env.APP_URL},body:body({csrf})})).status,302);
+ assert.equal((await f.request('/catalog.json',{headers:{cookie}})).status,401);
+ }finally{await f.close();}});
+test('Rejection persists across logins; admins can revoke a live session',async()=>{const f=await fixture();try{
+ const first=await login(f);const token=new URL(f.emails[0][1]).searchParams.get('token');assert.equal((await f.request('/review',{method:'POST',headers:{Origin:env.APP_URL},body:body({token,decision:'rejected'})})).status,200);
+ const next=await login(f,first.cookie);assert.equal(f.emails.length,1);assert.equal((await f.request('/catalog.json',{headers:{cookie:next.cookie}})).status,403);
+ f.state.user={id:'222222222222222222',username:'owner',displayName:'Owner'};const admin=await login(f);const account=await f.request('/account',{headers:{cookie:admin.cookie}});const csrf=account.text.match(/name="csrf" value="([^"]+)"/)[1];
+ assert.equal((await f.request('/admin',{headers:{cookie:next.cookie}})).status,403);
+ for(const decision of ['approved','revoked']){const r=await f.request('/admin/decision',{method:'POST',headers:{cookie:admin.cookie,Origin:env.APP_URL},body:body({id:user.id,csrf,decision})});assert.equal(r.status,302);assert.equal((await f.request('/catalog.json',{headers:{cookie:next.cookie}})).status,decision==='approved'?200:403);}
+ }finally{await f.close();}});
+test('Failures stay closed; email retries are throttled; approval tokens expire',async()=>{const f=await fixture();try{f.state.failMail=true;const session=await login(f);assert.equal((await f.request('/catalog.json',{headers:{cookie:session.cookie}})).status,403);f.state.failMail=false;const account=await f.request('/account',{headers:{cookie:session.cookie}});const csrf=account.text.match(/name="csrf" value="([^"]+)"/)[1];for(let i=0;i<2;i++)assert.equal((await f.request('/request-email',{method:'POST',headers:{cookie:session.cookie,Origin:env.APP_URL},body:body({csrf})})).status,200);assert.equal(f.emails.length,1);f.store.get=async()=>{throw Error('Database unavailable');};assert.equal((await f.request('/',{headers:{cookie:session.cookie}})).status,503);}finally{await f.close();}
+ const closed=await fixture({env:{}});try{assert.equal((await closed.request('/')).status,503);assert.equal((await closed.request('/catalog.json')).status,503);}finally{await closed.close();}
+ const token=sign({type:'approval',id:user.id,nonce:'x',exp:Date.now()-1000},env.SESSION_SECRET);assert.equal(verify(token,env.SESSION_SECRET,'approval'),null);
+});

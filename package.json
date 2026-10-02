@@ -1,0 +1,20 @@
+{
+  "name": "venom-lifeinvader-discord",
+  "version": "1.0.0",
+  "description": "Discord sign-in and owner email approval for Venom LifeInvader",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node --env-file=.env local.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "dependencies": {
+    "express": "5.2.1"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  }
+}

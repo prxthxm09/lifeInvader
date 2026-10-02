@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "index.mjs": {
+      "includeFiles": "protected/**",
+      "maxDuration": 30
+    }
+  }
+}
