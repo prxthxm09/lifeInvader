@@ -25,7 +25,7 @@ function selected(name,records,label,gender){const r=records.find(r=>r.name===na
 export function makeAd(category,data,catalog){const warnings=[];let text;const mode=data.mode;
  if(category==='vehicle'){
   assertMode(mode,['Buying','Selling','Trading','Selling or trading']);let name;
-  if(data.generic){const kinds=['car','electric car','motorcycle','motorbike','bike','boat','plane','helicopter'];if(!kinds.includes(data.kind))throw Error('Select a valid vehicle type.');name=`${article(data.kind)} ${data.kind}`;}else{name=`“${selected(data.name,catalog.vehicles,'Vehicle').name}”`;}
+  if(data.generic||(mode==='Buying'&&!String(data.name||'').trim())){const kinds=['car','electric car','motorcycle','motorbike','bike','boat','plane','helicopter'];if(!kinds.includes(data.kind))throw Error('Select a valid vehicle type.');name=`${article(data.kind)} ${data.kind}`;}else{name=`“${selected(data.name,catalog.vehicles,'Vehicle').name}”`;}
   text=`${mode} ${name}`;
   if(data.config){if(!['full','partial'].includes(data.config))throw Error('Invalid configuration.');text+=` in ${data.config} configuration`;}
   const extras=['visual upgrades','insurance','tuning parts','turbo kit','drift kit'].filter(x=>data.extras?.includes(x));if(extras.includes('turbo kit')&&extras.includes('drift kit'))extras.splice(extras.indexOf('turbo kit'),2,'turbo and drift kit');if(extras.length)text+=' with '+join(extras);

@@ -17,7 +17,7 @@ const modes=category==='property'?['Selling','Buying','Renting out','Looking to 
 if(category==='vehicle'){
  body+=select('kind','Vehicle Category',['car','electric car','motorcycle','boat','plane','helicopter'],state.kind);
  body+=`<div class="field">${check('generic','Advertise a general vehicle without a model',state.generic)}</div>`;
- if(!state.generic)body+=catalogue('name','Vehicle Name',catalog.vehicles.filter(r=>state.kind==='electric car'?r.kind==='car':r.kind===state.kind),state.name,'One vehicle per ad. Use a second vehicle only as the trading target.');
+ if(!state.generic)body+=catalogue('name',state.mode==='Buying'?'Vehicle Name (optional)':'Vehicle Name',catalog.vehicles.filter(r=>state.kind==='electric car'?r.kind==='car':r.kind===state.kind),state.name,state.mode==='Buying'?'Leave blank to buy any vehicle in the selected category. Enter a model to buy a specific vehicle.':'One vehicle per ad. Use a second vehicle only as the trading target.');
  const selectedVehicle=catalog.vehicles.find(r=>r.name===state.name);if(selectedVehicle?.stateValue&&!state.generic)body+=`<p class="notice">Excel state value: $${selectedVehicle.stateValue.toLocaleString('en-US').replaceAll(',','.')}. This is a reference, not a current market price.</p>`;
  if(state.mode.includes('trading')||state.mode==='Trading')body+=catalogue('target','Trade For (optional)',catalog.vehicles,state.target,'Trade only within Auto. Houses, businesses and items cannot be trading targets.');
  body+=select('config','Configuration',[{value:'',label:'Not specified'},'full','partial'],state.config);
