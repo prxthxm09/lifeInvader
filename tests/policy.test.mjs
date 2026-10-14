@@ -4,7 +4,7 @@ const c=JSON.parse(fs.readFileSync(new URL('../protected/catalog.json',import.me
 function eq(actual,expected){assert.equal(actual,expected);n++;}function bad(cat,data,re){assert.throws(()=>makeAd(cat,data,c),re);n++;}
 eq(money('4.5m','vehicle'),'$4.5 Million');eq(money('4.000','vehicle'),'$4.000');eq(money('1,000','vehicle'),'$1.000');eq(money('2b','vehicle'),'Negotiable');eq(money('2b','business'),'$2 Billion');eq(money('999999','property'),'Negotiable');eq(money('1000000','property'),'$1 Million');eq(money('1b','vehicle'),'$1 Billion');eq(parseMoney(''),null);
 eq(plural('battery'),'batteries');eq(plural('desert scarf mask'),'desert scarf masks');eq(plural('ruby'),'rubies');eq(plural('pet Christmas elf'),'pet Christmas elves');eq(plural('fish'),'fish');eq(plural('milk'),'milk');eq(plural('fuel for resource extraction'),'fuel for resource extraction');
-eq(makeAd('vehicle',{mode:'Selling',name:'Ubermacht M5 (E34)',price:'4.5m'},c).text,'Selling “Ubermacht M5 (E34)”. Price: $4.5 Million.');
+eq(makeAd('vehicle',{mode:'Selling',name:'Ubermacht M5 (E34)',price:'4.5m'},c).text,'Selling “'+c.vehicles.find(r=>r.oldNames?.includes('Ubermacht M5 (E34)')).name+'”. Price: $4.5 Million.');
 eq(makeAd('vehicle',{mode:'Buying',generic:true,kind:'electric car'},c).text,'Buying an electric car. Budget: Negotiable.');
 eq(makeAd('vehicle',{mode:'Trading',name:'Adder',target:'Baller'},c).text,'Trading “Adder” for “Baller”.');
 bad('vehicle',{mode:'Selling',name:'Not a vehicle'},/not found/);bad('vehicle',{mode:'Trading',name:'Adder',target:'house'},/not found/);
@@ -27,7 +27,7 @@ const long=c.clothing.find(r=>r.name.length>45);bad('clothing',{mode:'Selling',i
 let sweep=0;for(const category of ['vehicle','clothing','items'])for(const rec of c[category==='vehicle'?'vehicles':category]){const row={name:rec.name,variant:rec.variants?.[0]||(rec.variantKind==='version'?'1':''),detail:rec.name==='license plate'?'ABC123':rec.name==='sim-cards'?'11-11-111':''};const data=category==='vehicle'?{mode:'Selling',name:rec.name}:{mode:'Selling',items:[row]};const result=makeAd(category,data,c);assert(result.text.length<=150);assert(!/\/(?:s|es)|1\/2/.test(result.text));sweep++;}
 console.log(JSON.stringify({checks:n,catalogueSweep:sweep,counts:{vehicles:c.vehicles.length,clothing:c.clothing.length,items:c.items.length},status:'passed'}));
 eq(makeAd('items',{mode:'Selling',items:[{name:'neon armoured vest skin',variant:1,quantity:2}]},c).text,'Selling 2 neon armoured vest skins (V.1). Price: Negotiable.');
-eq(makeAd('items',{mode:'Selling',items:[{name:'VIP 2',quantity:3}]},c).text,'Selling 3 VIPs 2. Price: Negotiable.');
+eq(makeAd('items',{mode:'Selling',items:[{name:'VIP 2',quantity:3}]},c).text,'Selling 3 VIP 2. Price: Negotiable.');
 eq(makeAd('business',{mode:'Selling',name:'Gas Station',location:'near airport'},c).text,'Selling Gas Station business near airport. Price: Negotiable.');
 bad('property',{mode:'Selling',type:'house',count:2,numbers:'1'},/each advertised/);
 for(const cat of ['clothing','items'])for(const rec of c[cat]){if(['sim-cards','license plate'].includes(rec.name))continue;makeAd(cat,{mode:'Selling',items:[{name:rec.name,quantity:2,variant:rec.variants?.[0]||(rec.variantKind==='version'?'1':'')}]},c);}
@@ -53,3 +53,8 @@ eq(makeAd('items',{mode:'Buying',items:[{name:'license plate',special:true}]},c)
 eq(makeAd('items',{mode:'Selling',items:[{name:'sim-cards',detail:'11-11-111'}]},c).text,'Selling a sim-card with number 11-11-111. Price: Negotiable.');
 for(const rec of c.vehicles)for(const mode of ['Buying','Selling','Trading','Selling or trading']){const result=makeAd('vehicle',{mode,name:rec.name},c);assert(result.count<=150);assert(result.text.includes('“'+rec.name+'”'));if(mode==='Trading')assert(!/Price:|Budget:/.test(result.text));}
 console.log(JSON.stringify({genericVehicleCombinations:combinations,namedVehicleModeChecks:c.vehicles.length*4,totalExplicitChecks:n,status:'passed'}));
+for(const r of c.vehicles.filter(r=>r.oldNames?.length))for(const mode of ['Buying','Selling','Trading','Selling or trading']){
+ for(const name of [r.name,...r.oldNames,`${r.name} (${r.oldNames[0]})`]){const ad=makeAd('vehicle',{mode,name},c);assert(ad.text.includes(`“${r.name}”`));for(const old of r.oldNames)assert(!ad.text.includes(`“${old}”`));}
+ const ad=makeAd('vehicle',{mode:'Trading',kind:'car',target:r.oldNames[0]},c);assert(ad.text.includes(`for “${r.name}”`));
+}
+console.log('Updated vehicle names, old-name aliases, display labels, and trade targets passed.');

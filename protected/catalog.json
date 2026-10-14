@@ -15,18 +15,24 @@
       "row": 2
     },
     {
-      "name": "Calico GTF",
+      "name": "Declasse Vireo 4x4",
       "kind": "car",
       "stateValue": 1400000,
       "source": "CARS",
-      "row": 2
+      "row": 2,
+      "oldNames": [
+        "Calico GTF"
+      ]
     },
     {
-      "name": "Declasse Camaro 2020",
+      "name": "Declasse Avenor GTS",
       "kind": "car",
       "stateValue": 4500000,
       "source": "CARS",
-      "row": 2
+      "row": 2,
+      "oldNames": [
+        "Declasse Camaro 2020"
+      ]
     },
     {
       "name": "Elegy Retro Custom",
@@ -43,11 +49,14 @@
       "row": 2
     },
     {
-      "name": "Gallivanter Defender",
+      "name": "Gallivanter Arclight Classic",
       "kind": "car",
       "stateValue": 2500000,
       "source": "CARS",
-      "row": 2
+      "row": 2,
+      "oldNames": [
+        "Gallivanter Defender"
+      ]
     },
     {
       "name": "Hermes",
@@ -78,11 +87,15 @@
       "row": 2
     },
     {
-      "name": "Lampadati Guilia GTA",
+      "name": "Lampadati Arclight S",
       "kind": "car",
       "stateValue": 7500000,
       "source": "CARS",
-      "row": 2
+      "row": 2,
+      "oldNames": [
+        "Lampadati Giulia GTA",
+        "Lampadati Guilia GTA"
+      ]
     },
     {
       "name": "Mamba",
@@ -99,11 +112,14 @@
       "row": 2
     },
     {
-      "name": "Obey A6",
+      "name": "Obey Tempest V12",
       "kind": "car",
       "stateValue": 3300000,
       "source": "CARS",
-      "row": 2
+      "row": 2,
+      "oldNames": [
+        "Obey A6"
+      ]
     },
     {
       "name": "Panto",
@@ -134,11 +150,14 @@
       "row": 2
     },
     {
-      "name": "Ubermacht 760 (LI)",
+      "name": "Ubermacht Aureon V6",
       "kind": "car",
       "stateValue": 4000000,
       "source": "CARS",
-      "row": 2
+      "row": 2,
+      "oldNames": [
+        "Ubermacht 760 (LI)"
+      ]
     },
     {
       "name": "V-STR",
@@ -183,11 +202,14 @@
       "row": 2
     },
     {
-      "name": "Albany Escalade",
+      "name": "Albany Cassian",
       "kind": "car",
       "stateValue": 3500000,
       "source": "CARS",
-      "row": 3
+      "row": 3,
+      "oldNames": [
+        "Albany Escalade"
+      ]
     },
     {
       "name": "Baller LE LWB",
@@ -204,11 +226,14 @@
       "row": 3
     },
     {
-      "name": "Declasse Corvette C7",
+      "name": "Declasse Vanta Coupe",
       "kind": "car",
       "stateValue": 4400000,
       "source": "CARS",
-      "row": 3
+      "row": 3,
+      "oldNames": [
+        "Declasse Corvette C7"
+      ]
     },
     {
       "name": "Elegy RH8",
@@ -225,11 +250,14 @@
       "row": 3
     },
     {
-      "name": "Gallivanter Velar",
+      "name": "Gallivanter Mirage Performance",
       "kind": "car",
       "stateValue": 3500000,
       "source": "CARS",
-      "row": 3
+      "row": 3,
+      "oldNames": [
+        "Gallivanter Velar"
+      ]
     },
     {
       "name": "Hotknife",
@@ -253,11 +281,14 @@
       "row": 3
     },
     {
-      "name": "Karin Land Cruiser 200",
+      "name": "Karin Valora Blackline",
       "kind": "car",
       "stateValue": 3200000,
       "source": "CARS",
-      "row": 3
+      "row": 3,
+      "oldNames": [
+        "Karin Land Cruiser 200"
+      ]
     },
     {
       "name": "Landstalker",
@@ -267,11 +298,14 @@
       "row": 3
     },
     {
-      "name": "Mammoth Hum EV",
+      "name": "Mammoth Meridian GTS",
       "kind": "car",
       "stateValue": 23000000,
       "source": "CARS",
-      "row": 3
+      "row": 3,
+      "oldNames": [
+        "Mammoth Hum EV"
+      ]
     },
     {
       "name": "Neon",
@@ -281,11 +315,14 @@
       "row": 3
     },
     {
-      "name": "Obey A8",
+      "name": "Obey Vespera R",
       "kind": "car",
       "stateValue": 750000,
       "source": "CARS",
-      "row": 3
+      "row": 3,
+      "oldNames": [
+        "Obey A8"
+      ]
     },
     {
       "name": "Paragon R",
@@ -316,11 +353,14 @@
       "row": 3
     },
     {
-      "name": "Ubermacht I8",
+      "name": "Ubermacht Arclight R",
       "kind": "car",
       "stateValue": 3900000,
       "source": "CARS",
-      "row": 3
+      "row": 3,
+      "oldNames": [
+        "Ubermacht I8"
+      ]
     },
     {
       "name": "Vacca",
@@ -330,11 +370,14 @@
       "row": 3
     },
     {
-      "name": "Warrener HKR",
+      "name": "Declasse Boreal Sport",
       "kind": "car",
       "stateValue": 130000,
       "source": "CARS",
-      "row": 3
+      "row": 3,
+      "oldNames": [
+        "Warrener HKR"
+      ]
     },
     {
       "name": "XA-21",
@@ -386,11 +429,14 @@
       "row": 4
     },
     {
-      "name": "Declasse Tahoe",
+      "name": "Declasse Arcadia Performance",
       "kind": "car",
       "stateValue": 1500000,
       "source": "CARS",
-      "row": 4
+      "row": 4,
+      "oldNames": [
+        "Declasse Tahoe"
+      ]
     },
     {
       "name": "Ellie",
@@ -435,11 +481,14 @@
       "row": 4
     },
     {
-      "name": "Karin Mark 2",
+      "name": "Karin Vesper RS",
       "kind": "car",
       "stateValue": 500000,
       "source": "CARS",
-      "row": 4
+      "row": 4,
+      "oldNames": [
+        "Karin Mark 2"
+      ]
     },
     {
       "name": "Lynx",
@@ -491,18 +540,24 @@
       "row": 4
     },
     {
-      "name": "Tailgater S",
+      "name": "Declasse Aurelia Touring",
       "kind": "car",
       "stateValue": 2800000,
       "source": "CARS",
-      "row": 4
+      "row": 4,
+      "oldNames": [
+        "Tailgater S"
+      ]
     },
     {
-      "name": "Ubermacht M3 (E46)",
+      "name": "Ubermacht Sentinel R46",
       "kind": "car",
       "stateValue": 380000,
       "source": "CARS",
-      "row": 4
+      "row": 4,
+      "oldNames": [
+        "Ubermacht M3 (E46)"
+      ]
     },
     {
       "name": "Vagner",
@@ -533,11 +588,14 @@
       "row": 4
     },
     {
-      "name": "Annis 350Z",
+      "name": "Annis Falcon R",
       "kind": "car",
       "stateValue": 2750000,
       "source": "CARS",
-      "row": 5
+      "row": 5,
+      "oldNames": [
+        "Annis 350Z"
+      ]
     },
     {
       "name": "Banshee",
@@ -596,11 +654,14 @@
       "row": 5
     },
     {
-      "name": "Karin Rav4 2021",
+      "name": "Karin Atlas Signature",
       "kind": "car",
       "stateValue": 10000000,
       "source": "CARS",
-      "row": 5
+      "row": 5,
+      "oldNames": [
+        "Karin Rav4 2021"
+      ]
     },
     {
       "name": "Monroe",
@@ -617,11 +678,14 @@
       "row": 5
     },
     {
-      "name": "Obey Q8",
+      "name": "Obey Altair Cabrio",
       "kind": "car",
       "stateValue": 5500000,
       "source": "CARS",
-      "row": 5
+      "row": 5,
+      "oldNames": [
+        "Obey Q8"
+      ]
     },
     {
       "name": "Patriot",
@@ -652,11 +716,14 @@
       "row": 5
     },
     {
-      "name": "Ubermacht M3 (G80)",
+      "name": "Ubermacht Cypher R",
       "kind": "car",
       "stateValue": 3800000,
       "source": "CARS",
-      "row": 5
+      "row": 5,
+      "oldNames": [
+        "Ubermacht M3 (G80)"
+      ]
     },
     {
       "name": "Vamos",
@@ -687,11 +754,14 @@
       "row": 5
     },
     {
-      "name": "Annis GT-R I",
+      "name": "Annis Elegy GT",
       "kind": "car",
       "stateValue": 3800000,
       "source": "CARS",
-      "row": 6
+      "row": 6,
+      "oldNames": [
+        "Annis GT-R I"
+      ]
     },
     {
       "name": "Banshee 900R",
@@ -715,11 +785,14 @@
       "row": 6
     },
     {
-      "name": "Emperor LX-570",
+      "name": "Emperor Ravena Touring",
       "kind": "car",
       "stateValue": 3500000,
       "source": "CARS",
-      "row": 6
+      "row": 6,
+      "oldNames": [
+        "Emperor LX-570"
+      ]
     },
     {
       "name": "Feltzer",
@@ -750,11 +823,14 @@
       "row": 6
     },
     {
-      "name": "Karin Supra A80",
+      "name": "Karin Jester A80",
       "kind": "car",
       "stateValue": 2500000,
       "source": "CARS",
-      "row": 6
+      "row": 6,
+      "oldNames": [
+        "Karin Supra A80"
+      ]
     },
     {
       "name": "Moonbeam",
@@ -771,11 +847,14 @@
       "row": 6
     },
     {
-      "name": "Obey R8",
+      "name": "Obey Vellum Custom",
       "kind": "car",
       "stateValue": 2800000,
       "source": "CARS",
-      "row": 6
+      "row": 6,
+      "oldNames": [
+        "Obey R8"
+      ]
     },
     {
       "name": "Patriot Stretch",
@@ -806,11 +885,14 @@
       "row": 6
     },
     {
-      "name": "Ubermacht M3 CS",
+      "name": "Ubermacht Mariner Custom",
       "kind": "car",
       "stateValue": 12000000,
       "source": "CARS",
-      "row": 6
+      "row": 6,
+      "oldNames": [
+        "Ubermacht M3 CS"
+      ]
     },
     {
       "name": "Vapid Mustang GT500",
@@ -834,11 +916,14 @@
       "row": 6
     },
     {
-      "name": "Annis RX-7 (FD)",
+      "name": "Annis Vellum R-Spec",
       "kind": "car",
       "stateValue": 450000,
       "source": "CARS",
-      "row": 7
+      "row": 7,
+      "oldNames": [
+        "Annis RX-7 (FD)"
+      ]
     },
     {
       "name": "Beater Emperor",
@@ -890,18 +975,24 @@
       "row": 7
     },
     {
-      "name": "Jester RR",
+      "name": "Declasse Lucerna Edition",
       "kind": "car",
       "stateValue": 3000000,
       "source": "CARS",
-      "row": 7
+      "row": 7,
+      "oldNames": [
+        "Jester RR"
+      ]
     },
     {
-      "name": "Karin Tundra 2021",
+      "name": "Karin Helion GTS",
       "kind": "car",
       "stateValue": 3000000,
       "source": "CARS",
-      "row": 7
+      "row": 7,
+      "oldNames": [
+        "Karin Tundra 2021"
+      ]
     },
     {
       "name": "Novak",
@@ -911,18 +1002,24 @@
       "row": 7
     },
     {
-      "name": "Obey RS6",
+      "name": "Obey Argent Touring",
       "kind": "car",
       "stateValue": 3200000,
       "source": "CARS",
-      "row": 7
+      "row": 7,
+      "oldNames": [
+        "Obey RS6"
+      ]
     },
     {
-      "name": "Pegassi Huayra BC",
+      "name": "Pegassi Obsidian XL",
       "kind": "car",
       "stateValue": 9000000,
       "source": "CARS",
-      "row": 7
+      "row": 7,
+      "oldNames": [
+        "Pegassi Huayra BC"
+      ]
     },
     {
       "name": "Rat-Truck",
@@ -946,18 +1043,24 @@
       "row": 7
     },
     {
-      "name": "Ubermacht M4 (G82)",
+      "name": "Ubermacht Veyra Turbo",
       "kind": "car",
       "stateValue": 3500000,
       "source": "CARS",
-      "row": 7
+      "row": 7,
+      "oldNames": [
+        "Ubermacht M4 (G82)"
+      ]
     },
     {
-      "name": "Vapid Raptor (F150)",
+      "name": "Vapid Moraine SV",
       "kind": "car",
       "stateValue": 4500000,
       "source": "CARS",
-      "row": 7
+      "row": 7,
+      "oldNames": [
+        "Vapid Raptor (F150)"
+      ]
     },
     {
       "name": "Zorrusso",
@@ -967,11 +1070,14 @@
       "row": 7
     },
     {
-      "name": "Annis RX-7 (VF)",
+      "name": "Annis Monarch",
       "kind": "car",
       "stateValue": 2000000,
       "source": "CARS",
-      "row": 8
+      "row": 8,
+      "oldNames": [
+        "Annis RX-7 (VF)"
+      ]
     },
     {
       "name": "Beater Mariachi Tornado",
@@ -1037,18 +1143,24 @@
       "row": 8
     },
     {
-      "name": "Obey RS7",
+      "name": "Obey Argent Sport",
       "kind": "car",
       "stateValue": 3200000,
       "source": "CARS",
-      "row": 8
+      "row": 8,
+      "oldNames": [
+        "Obey RS7"
+      ]
     },
     {
-      "name": "Pegassi Performante (LP640)",
+      "name": "Pegassi Mirage",
       "kind": "car",
       "stateValue": 5000000,
       "source": "CARS",
-      "row": 8
+      "row": 8,
+      "oldNames": [
+        "Pegassi Performante (LP640)"
+      ]
     },
     {
       "name": "RE-7B",
@@ -1072,25 +1184,34 @@
       "row": 8
     },
     {
-      "name": "Ubermacht M4 (GTS)",
+      "name": "Ubermacht Velora SV",
       "kind": "car",
       "stateValue": 19000000,
       "source": "CARS",
-      "row": 8
+      "row": 8,
+      "oldNames": [
+        "Ubermacht M4 (GTS)"
+      ]
     },
     {
-      "name": "Vectre",
+      "name": "Declasse Solstice Custom",
       "kind": "car",
       "stateValue": 3100000,
       "source": "CARS",
-      "row": 8
+      "row": 8,
+      "oldNames": [
+        "Vectre"
+      ]
     },
     {
-      "name": "Annis RX-8",
+      "name": "Annis Noctis Turbo",
       "kind": "car",
       "stateValue": 1300000,
       "source": "CARS",
-      "row": 9
+      "row": 9,
+      "oldNames": [
+        "Annis RX-8"
+      ]
     },
     {
       "name": "Beater Surfer",
@@ -1107,18 +1228,24 @@
       "row": 9
     },
     {
-      "name": "Dinka RT-3000",
+      "name": "Dinka Meridian GTS",
       "kind": "car",
       "stateValue": 1000000,
       "source": "CARS",
-      "row": 9
+      "row": 9,
+      "oldNames": [
+        "Dinka RT-3000"
+      ]
     },
     {
-      "name": "Enus Bentayga",
+      "name": "Enus Meridian Sport",
       "kind": "car",
       "stateValue": 4000000,
       "source": "CARS",
-      "row": 9
+      "row": 9,
+      "oldNames": [
+        "Enus Bentayga"
+      ]
     },
     {
       "name": "FQ 2",
@@ -1156,11 +1283,14 @@
       "row": 9
     },
     {
-      "name": "Obey S8 (D4)",
+      "name": "Obey Orion Sport",
       "kind": "car",
       "stateValue": 10000000,
       "source": "CARS",
-      "row": 9
+      "row": 9,
+      "oldNames": [
+        "Obey S8 (D4)"
+      ]
     },
     {
       "name": "Penetrator",
@@ -1191,11 +1321,14 @@
       "row": 9
     },
     {
-      "name": "Ubermacht M5 (CS)",
+      "name": "Ubermacht Sentinel V8 Clubsport",
       "kind": "car",
       "stateValue": 10000000,
       "source": "CARS",
-      "row": 9
+      "row": 9,
+      "oldNames": [
+        "Ubermacht M5 (CS)"
+      ]
     },
     {
       "name": "Velierer",
@@ -1205,11 +1338,14 @@
       "row": 9
     },
     {
-      "name": "Annis Silvia (S15)",
+      "name": "Annis Remus S15",
       "kind": "car",
       "stateValue": 900000,
       "source": "CARS",
-      "row": 10
+      "row": 10,
+      "oldNames": [
+        "Annis Silvia (S15)"
+      ]
     },
     {
       "name": "Beater Tornado",
@@ -1233,11 +1369,14 @@
       "row": 10
     },
     {
-      "name": "Enus Continental GT",
+      "name": "Enus Apex Turbo",
       "kind": "car",
       "stateValue": 6000000,
       "source": "CARS",
-      "row": 10
+      "row": 10,
+      "oldNames": [
+        "Enus Continental GT"
+      ]
     },
     {
       "name": "Fugitive",
@@ -1303,11 +1442,14 @@
       "row": 10
     },
     {
-      "name": "Ubermacht M5 (E34)",
+      "name": "Ubermacht Apex R-Spec",
       "kind": "car",
       "stateValue": 120000,
       "source": "CARS",
-      "row": 10
+      "row": 10,
+      "oldNames": [
+        "Ubermacht M5 (E34)"
+      ]
     },
     {
       "name": "Vigero",
@@ -1317,18 +1459,24 @@
       "row": 10
     },
     {
-      "name": "Annis Skyline GT-R (R34)",
+      "name": "Annis Elegy R34",
       "kind": "car",
       "stateValue": 2500000,
       "source": "CARS",
-      "row": 11
+      "row": 11,
+      "oldNames": [
+        "Annis Skyline GT-R (R34)"
+      ]
     },
     {
-      "name": "Benefactor 600SEL (W140)",
+      "name": "Benefactor Mariner XL",
       "kind": "car",
       "stateValue": 90000,
       "source": "CARS",
-      "row": 11
+      "row": 11,
+      "oldNames": [
+        "Benefactor 600SEL (W140)"
+      ]
     },
     {
       "name": "Clique",
@@ -1338,18 +1486,24 @@
       "row": 11
     },
     {
-      "name": "Dominator ASP",
+      "name": "Declasse Valence V8",
       "kind": "car",
       "stateValue": 1300000,
       "source": "CARS",
-      "row": 11
+      "row": 11,
+      "oldNames": [
+        "Dominator ASP"
+      ]
     },
     {
-      "name": "Enus Cullinan",
+      "name": "Enus Jubilee XL",
       "kind": "car",
       "stateValue": 7000000,
       "source": "CARS",
-      "row": 11
+      "row": 11,
+      "oldNames": [
+        "Enus Cullinan"
+      ]
     },
     {
       "name": "Furore GT",
@@ -1373,11 +1527,14 @@
       "row": 11
     },
     {
-      "name": "Ocelot Eletre",
+      "name": "Ocelot Talon GT",
       "kind": "car",
       "stateValue": 15000000,
       "source": "CARS",
-      "row": 11
+      "row": 11,
+      "oldNames": [
+        "Ocelot Eletre"
+      ]
     },
     {
       "name": "Pfister 911",
@@ -1408,11 +1565,14 @@
       "row": 11
     },
     {
-      "name": "Ubermacht M5 (E60)",
+      "name": "Ubermacht Sentinel V10",
       "kind": "car",
       "stateValue": 1000000,
       "source": "CARS",
-      "row": 11
+      "row": 11,
+      "oldNames": [
+        "Ubermacht M5 (E60)"
+      ]
     },
     {
       "name": "Virgo",
@@ -1422,18 +1582,24 @@
       "row": 11
     },
     {
-      "name": "Annis WRX 2004",
+      "name": "Annis Vireon XL",
       "kind": "car",
       "stateValue": 1300000,
       "source": "CARS",
-      "row": 12
+      "row": 12,
+      "oldNames": [
+        "Annis WRX 2004"
+      ]
     },
     {
-      "name": "Benefactor C63 Coupe (W205)",
+      "name": "Benefactor Meridian Performance",
       "kind": "car",
       "stateValue": 1700000,
       "source": "CARS",
-      "row": 12
+      "row": 12,
+      "oldNames": [
+        "Benefactor C63 Coupe (W205)"
+      ]
     },
     {
       "name": "Cognoscenti",
@@ -1443,18 +1609,24 @@
       "row": 12
     },
     {
-      "name": "Dominator GTT",
+      "name": "Declasse Draven Touring",
       "kind": "car",
       "stateValue": 250000,
       "source": "CARS",
-      "row": 12
+      "row": 12,
+      "oldNames": [
+        "Dominator GTT"
+      ]
     },
     {
-      "name": "Enus Phantom",
+      "name": "Enus Valence R",
       "kind": "car",
       "stateValue": 8000000,
       "source": "CARS",
-      "row": 12
+      "row": 12,
+      "oldNames": [
+        "Enus Phantom"
+      ]
     },
     {
       "name": "Fusilade",
@@ -1464,25 +1636,34 @@
       "row": 12
     },
     {
-      "name": "Grotti Italia (F458)",
+      "name": "Grotti Itali 458",
       "kind": "car",
       "stateValue": 4500000,
       "source": "CARS",
-      "row": 12
+      "row": 12,
+      "oldNames": [
+        "Grotti Italia (F458)"
+      ]
     },
     {
-      "name": "Ocelot F-Type R",
+      "name": "Ocelot Volante Clubsport",
       "kind": "car",
       "stateValue": 7900000,
       "source": "CARS",
-      "row": 12
+      "row": 12,
+      "oldNames": [
+        "Ocelot F-Type R"
+      ]
     },
     {
-      "name": "Pfister 918 Spyder",
+      "name": "Pfister Sable Cabrio",
       "kind": "car",
       "stateValue": 15000000,
       "source": "CARS",
-      "row": 12
+      "row": 12,
+      "oldNames": [
+        "Pfister 918 Spyder"
+      ]
     },
     {
       "name": "Regina",
@@ -1506,11 +1687,14 @@
       "row": 12
     },
     {
-      "name": "Ubermacht M5 (F90)",
+      "name": "Ubermacht Sentinel V8",
       "kind": "car",
       "stateValue": 4000000,
       "source": "CARS",
-      "row": 12
+      "row": 12,
+      "oldNames": [
+        "Ubermacht M5 (F90)"
+      ]
     },
     {
       "name": "Virgo Classic",
@@ -1520,18 +1704,24 @@
       "row": 12
     },
     {
-      "name": "Annis ZR-350",
+      "name": "Annis Boreal XR",
       "kind": "car",
       "stateValue": 900000,
       "source": "CARS",
-      "row": 13
+      "row": 13,
+      "oldNames": [
+        "Annis ZR-350"
+      ]
     },
     {
-      "name": "Benefactor E420 (W210)",
+      "name": "Benefactor Lucent R-Spec",
       "kind": "car",
       "stateValue": 120000,
       "source": "CARS",
-      "row": 13
+      "row": 13,
+      "oldNames": [
+        "Benefactor E420 (W210)"
+      ]
     },
     {
       "name": "Cognoscenti 55",
@@ -1569,25 +1759,34 @@
       "row": 13
     },
     {
-      "name": "Ocelot V12 Speedster",
+      "name": "Ocelot Serrata V8",
       "kind": "car",
       "stateValue": 20000000,
       "source": "CARS",
-      "row": 13
+      "row": 13,
+      "oldNames": [
+        "Ocelot V12 Speedster"
+      ]
     },
     {
-      "name": "Pfister Panamera",
+      "name": "Pfister Echelon Sport",
       "kind": "car",
       "stateValue": 2200000,
       "source": "CARS",
-      "row": 13
+      "row": 13,
+      "oldNames": [
+        "Pfister Panamera"
+      ]
     },
     {
-      "name": "Remus",
+      "name": "Declasse Aster Grand",
       "kind": "car",
       "stateValue": 950000,
       "source": "CARS",
-      "row": 13
+      "row": 13,
+      "oldNames": [
+        "Remus"
+      ]
     },
     {
       "name": "Sentinel Classic",
@@ -1604,11 +1803,14 @@
       "row": 13
     },
     {
-      "name": "Ubermacht M8 (F91)",
+      "name": "Ubermacht Tempest",
       "kind": "car",
       "stateValue": 4200000,
       "source": "CARS",
-      "row": 13
+      "row": 13,
+      "oldNames": [
+        "Ubermacht M8 (F91)"
+      ]
     },
     {
       "name": "Visione",
@@ -1625,11 +1827,14 @@
       "row": 14
     },
     {
-      "name": "Benefactor G63 (G770)",
+      "name": "Benefactor Dubsta Blackline",
       "kind": "car",
       "stateValue": 5000000,
       "source": "CARS",
-      "row": 14
+      "row": 14,
+      "oldNames": [
+        "Benefactor G63 (G770)"
+      ]
     },
     {
       "name": "Cognoscenti Cabrio",
@@ -1639,32 +1844,44 @@
       "row": 14
     },
     {
-      "name": "Dominator PiBwasser",
+      "name": "Dominator Pibwasser",
       "kind": "car",
       "stateValue": 720000,
       "source": "CARS",
-      "row": 14
+      "row": 14,
+      "oldNames": [
+        "Dominator PiBwasser"
+      ]
     },
     {
-      "name": "Euros",
+      "name": "Declasse Boreal XR",
       "kind": "car",
       "stateValue": 2900000,
       "source": "CARS",
-      "row": 14
+      "row": 14,
+      "oldNames": [
+        "Euros"
+      ]
     },
     {
-      "name": "Futo GTX",
+      "name": "Declasse Silva Custom",
       "kind": "car",
       "stateValue": 125000,
       "source": "CARS",
-      "row": 14
+      "row": 14,
+      "oldNames": [
+        "Futo GTX"
+      ]
     },
     {
-      "name": "Growler",
+      "name": "Declasse Radian GTS",
       "kind": "car",
       "stateValue": 3250000,
       "source": "CARS",
-      "row": 14
+      "row": 14,
+      "oldNames": [
+        "Growler"
+      ]
     },
     {
       "name": "Ocelot Vanquish Zagato SB",
@@ -1674,11 +1891,14 @@
       "row": 14
     },
     {
-      "name": "Pfister Taycan",
+      "name": "Pfister Solace Clubsport",
       "kind": "car",
       "stateValue": 10000000,
       "source": "CARS",
-      "row": 14
+      "row": 14,
+      "oldNames": [
+        "Pfister Taycan"
+      ]
     },
     {
       "name": "Revolter",
@@ -1695,18 +1915,24 @@
       "row": 14
     },
     {
-      "name": "Truffade Chiron",
+      "name": "Truffade Eclat",
       "kind": "car",
       "stateValue": 10000000,
       "source": "CARS",
-      "row": 14
+      "row": 14,
+      "oldNames": [
+        "Truffade Chiron"
+      ]
     },
     {
-      "name": "Ubermacht X5 (E70)",
+      "name": "Ubermacht Avenor Edition",
       "kind": "car",
       "stateValue": 2300000,
       "source": "CARS",
-      "row": 14
+      "row": 14,
+      "oldNames": [
+        "Ubermacht X5 (E70)"
+      ]
     },
     {
       "name": "Voltic",
@@ -1730,11 +1956,14 @@
       "row": 15
     },
     {
-      "name": "Coil Cybertruck",
+      "name": "Coil Aleron Cabrio",
       "kind": "car",
       "stateValue": 4000000,
       "source": "CARS",
-      "row": 15
+      "row": 15,
+      "oldNames": [
+        "Coil Cybertruck"
+      ]
     },
     {
       "name": "Drift Yosemite",
@@ -1760,16 +1989,19 @@
     {
       "name": "GT 500",
       "kind": "car",
-      "stateValue": null,
+      "stateValue": 750000,
       "source": "CARS",
       "row": 15
     },
     {
-      "name": "Ocelot Victor",
+      "name": "Ocelot Obsidian R-Spec",
       "kind": "car",
       "stateValue": null,
       "source": "CARS",
-      "row": 15
+      "row": 15,
+      "oldNames": [
+        "Ocelot Victor"
+      ]
     },
     {
       "name": "Pheonix",
@@ -1800,11 +2032,14 @@
       "row": 15
     },
     {
-      "name": "Ubermacht X5 (G05)",
+      "name": "Ubermacht Avenor Clubsport",
       "kind": "car",
       "stateValue": 5000000,
       "source": "CARS",
-      "row": 15
+      "row": 15,
+      "oldNames": [
+        "Ubermacht X5 (G05)"
+      ]
     },
     {
       "name": "Voodoo",
@@ -1828,11 +2063,14 @@
       "row": 16
     },
     {
-      "name": "Coil H9",
+      "name": "Coil Vesperon R-Spec",
       "kind": "car",
       "stateValue": 11000000,
       "source": "CARS",
-      "row": 16
+      "row": 16,
+      "oldNames": [
+        "Coil H9"
+      ]
     },
     {
       "name": "Dubsta",
@@ -1842,11 +2080,14 @@
       "row": 16
     },
     {
-      "name": "Enus Spectre",
+      "name": "Enus Summit Custom",
       "kind": "car",
       "stateValue": 33000000,
       "source": "CARS",
-      "row": 16
+      "row": 16,
+      "oldNames": [
+        "Enus Spectre"
+      ]
     },
     {
       "name": "Ocelot XE SV Project 8",
@@ -1884,11 +2125,14 @@
       "row": 16
     },
     {
-      "name": "Ubermacht X5-M (F95)",
+      "name": "Ubermacht Lucerna Custom",
       "kind": "car",
       "stateValue": 15000000,
       "source": "CARS",
-      "row": 16
+      "row": 16,
+      "oldNames": [
+        "Ubermacht X5-M (F95)"
+      ]
     },
     {
       "name": "Voodoo Custom",
@@ -1905,18 +2149,24 @@
       "row": 17
     },
     {
-      "name": "Benefactor S63 (W222)",
+      "name": "Benefactor Schafter V12 Sport",
       "kind": "car",
       "stateValue": 4000000,
       "source": "CARS",
-      "row": 17
+      "row": 17,
+      "oldNames": [
+        "Benefactor S63 (W222)"
+      ]
     },
     {
-      "name": "Coil Model S",
+      "name": "Coil Ardent V8",
       "kind": "car",
       "stateValue": 6000000,
       "source": "CARS",
-      "row": 17
+      "row": 17,
+      "oldNames": [
+        "Coil Model S"
+      ]
     },
     {
       "name": "Dubsta 6x6",
@@ -1926,11 +2176,14 @@
       "row": 17
     },
     {
-      "name": "Octavia RS",
+      "name": "Declasse Atlas",
       "kind": "car",
       "stateValue": 2500000,
       "source": "CARS",
-      "row": 17
+      "row": 17,
+      "oldNames": [
+        "Octavia RS"
+      ]
     },
     {
       "name": "Prairie",
@@ -1961,11 +2214,14 @@
       "row": 17
     },
     {
-      "name": "Ubermacht X6-M (E71)",
+      "name": "Ubermacht Cobalt Signature",
       "kind": "car",
       "stateValue": 3000000,
       "source": "CARS",
-      "row": 17
+      "row": 17,
+      "oldNames": [
+        "Ubermacht X6-M (E71)"
+      ]
     },
     {
       "name": "Ardent",
@@ -1975,18 +2231,24 @@
       "row": 18
     },
     {
-      "name": "Benefactor Vito (V447)",
+      "name": "Benefactor Apex Cabrio",
       "kind": "car",
       "stateValue": 4000000,
       "source": "CARS",
-      "row": 18
+      "row": 18,
+      "oldNames": [
+        "Benefactor Vito (V447)"
+      ]
     },
     {
-      "name": "Coil Model X",
+      "name": "Coil Kestrel GT",
       "kind": "car",
       "stateValue": null,
       "source": "CARS",
-      "row": 18
+      "row": 18,
+      "oldNames": [
+        "Coil Model X"
+      ]
     },
     {
       "name": "Dubsta SG",
@@ -2031,11 +2293,14 @@
       "row": 18
     },
     {
-      "name": "Ubermacht X6-M 2021",
+      "name": "Ubermacht Vanta 4x4",
       "kind": "car",
       "stateValue": 18000000,
       "source": "CARS",
-      "row": 18
+      "row": 18,
+      "oldNames": [
+        "Ubermacht X6-M 2021"
+      ]
     },
     {
       "name": "Asbo",
@@ -2045,18 +2310,24 @@
       "row": 19
     },
     {
-      "name": "Benefactor-AMG C63 (W205)",
+      "name": "Benefactor Moraine GT",
       "kind": "car",
       "stateValue": 1500000,
       "source": "CARS",
-      "row": 19
+      "row": 19,
+      "oldNames": [
+        "Benefactor-AMG C63 (W205)"
+      ]
     },
     {
-      "name": "Coil Roadster",
+      "name": "Coil Mirage R-Spec",
       "kind": "car",
       "stateValue": 10000000,
       "source": "CARS",
-      "row": 19
+      "row": 19,
+      "oldNames": [
+        "Coil Roadster"
+      ]
     },
     {
       "name": "Dukes",
@@ -2101,11 +2372,14 @@
       "row": 19
     },
     {
-      "name": "Ubermacht X7 (G07)",
+      "name": "Ubermacht Revenant Touring",
       "kind": "car",
       "stateValue": 6000000,
       "source": "CARS",
-      "row": 19
+      "row": 19,
+      "oldNames": [
+        "Ubermacht X7 (G07)"
+      ]
     },
     {
       "name": "Asea",
@@ -2129,11 +2403,14 @@
       "row": 20
     },
     {
-      "name": "Progen P1",
+      "name": "Progen T20 Apex",
       "kind": "car",
       "stateValue": 7000000,
       "source": "CARS",
-      "row": 20
+      "row": 20,
+      "oldNames": [
+        "Progen P1"
+      ]
     },
     {
       "name": "Ruston",
@@ -2164,11 +2441,14 @@
       "row": 21
     },
     {
-      "name": "Comet S2",
+      "name": "Declasse Orion Evolution",
       "kind": "car",
       "stateValue": 3100000,
       "source": "CARS",
-      "row": 21
+      "row": 21,
+      "oldNames": [
+        "Comet S2"
+      ]
     },
     {
       "name": "Pfister 811",
@@ -2199,11 +2479,14 @@
       "row": 22
     },
     {
-      "name": "Benefactor-AMG SL65 (R230)",
+      "name": "Benefactor Avenor Sport",
       "kind": "car",
       "stateValue": 3500000,
       "source": "CARS",
-      "row": 22
+      "row": 22,
+      "oldNames": [
+        "Benefactor-AMG SL65 (R230)"
+      ]
     },
     {
       "name": "Comet SR",
@@ -2220,11 +2503,14 @@
       "row": 22
     },
     {
-      "name": "Benefactor-Maybach Pullman",
+      "name": "Benefactor Valen Cabrio",
       "kind": "car",
       "stateValue": 5000000,
       "source": "CARS",
-      "row": 23
+      "row": 23,
+      "oldNames": [
+        "Benefactor-Maybach Pullman"
+      ]
     },
     {
       "name": "Contender",
@@ -2241,11 +2527,14 @@
       "row": 23
     },
     {
-      "name": "Benefactor-MG VT",
+      "name": "Benefactor Stratos Cabrio",
       "kind": "car",
       "stateValue": 6000000,
       "source": "CARS",
-      "row": 24
+      "row": 24,
+      "oldNames": [
+        "Benefactor-MG VT"
+      ]
     },
     {
       "name": "Coquette",
@@ -2262,11 +2551,14 @@
       "row": 24
     },
     {
-      "name": "Benefactor-MG VT 63 (S)",
+      "name": "Benefactor Caldera V6",
       "kind": "car",
       "stateValue": 4200000,
       "source": "CARS",
-      "row": 25
+      "row": 25,
+      "oldNames": [
+        "Benefactor-MG VT 63 (S)"
+      ]
     },
     {
       "name": "Coquette Blackfin",
@@ -2353,11 +2645,14 @@
       "row": 29
     },
     {
-      "name": "Cypher",
+      "name": "Declasse Tessera Sport",
       "kind": "car",
       "stateValue": 3200000,
       "source": "CARS",
-      "row": 29
+      "row": 29,
+      "oldNames": [
+        "Cypher"
+      ]
     },
     {
       "name": "Sultan",
@@ -2374,11 +2669,14 @@
       "row": 30
     },
     {
-      "name": "Canis Grand Cherokee",
+      "name": "Canis Vellum XL",
       "kind": "car",
       "stateValue": 1500000,
       "source": "CARS",
-      "row": 30
+      "row": 30,
+      "oldNames": [
+        "Canis Grand Cherokee"
+      ]
     },
     {
       "name": "Sultan Classic",
@@ -2402,25 +2700,34 @@
       "row": 31
     },
     {
-      "name": "Bravado Charger 1969",
+      "name": "Bravado Ardent GT",
       "kind": "car",
       "stateValue": 400000,
       "source": "CARS",
-      "row": 32
+      "row": 32,
+      "oldNames": [
+        "Bravado Charger 1969"
+      ]
     },
     {
-      "name": "Sultan RS Classic",
+      "name": "Declasse Silva RS",
       "kind": "car",
       "stateValue": 1000000,
       "source": "CARS",
-      "row": 32
+      "row": 32,
+      "oldNames": [
+        "Sultan RS Classic"
+      ]
     },
     {
-      "name": "Bravado Charger SRT",
+      "name": "Bravado Obsidian R-Spec",
       "kind": "car",
       "stateValue": 5000000,
       "source": "CARS",
-      "row": 33
+      "row": 33,
+      "oldNames": [
+        "Bravado Charger SRT"
+      ]
     },
     {
       "name": "Super Diamond",
@@ -2430,11 +2737,14 @@
       "row": 33
     },
     {
-      "name": "Bravado Ram 1500",
+      "name": "Bravado Aureon Coupe",
       "kind": "car",
       "stateValue": 3500000,
       "source": "CARS",
-      "row": 34
+      "row": 34,
+      "oldNames": [
+        "Bravado Ram 1500"
+      ]
     },
     {
       "name": "Surano",
@@ -2500,18 +2810,24 @@
       "row": 40
     },
     {
-      "name": "Burgerfahrzeug Golf GTI Vision",
+      "name": "Burgerfahrzeug Club GTI",
       "kind": "car",
       "stateValue": 2800000,
       "source": "CARS",
-      "row": 41
+      "row": 41,
+      "oldNames": [
+        "Burgerfahrzeug Golf GTI Vision"
+      ]
     },
     {
-      "name": "Burgerfahrzeug Tiguan",
+      "name": "Burgerfahrzeug Kestrel V8",
       "kind": "car",
       "stateValue": 10000000,
       "source": "CARS",
-      "row": 42
+      "row": 42,
+      "oldNames": [
+        "Burgerfahrzeug Tiguan"
+      ]
     },
     {
       "name": "Akuma",
@@ -5582,6 +5898,13 @@
       "row": 60
     },
     {
+      "name": "Supermen trousers",
+      "group": "PANTS",
+      "gender": "for men",
+      "source": "CLOTHING LIST",
+      "row": 60
+    },
+    {
       "name": "saruko neon mask",
       "group": "HEADWEAR/MASK",
       "gender": "",
@@ -6017,7 +6340,7 @@
       "row": 82
     },
     {
-      "name": "sweatshirt",
+      "name": "Supermen T-shirt",
       "group": "TOP",
       "gender": "for men",
       "source": "CLOTHING LIST",
@@ -6031,543 +6354,564 @@
       "row": 83
     },
     {
-      "name": "swimming trunks",
+      "name": "sweatshirt",
       "group": "TOP",
       "gender": "for men",
       "source": "CLOTHING LIST",
       "row": 84
     },
     {
-      "name": "T-shirt",
+      "name": "Cyberperson neon backpack skin",
+      "group": "BACKPACK SKINS",
+      "gender": "",
+      "source": "CLOTHING LIST",
+      "row": 84
+    },
+    {
+      "name": "swimming trunks",
       "group": "TOP",
       "gender": "for men",
       "source": "CLOTHING LIST",
       "row": 85
     },
     {
-      "name": "tapered classic turtleneck",
+      "name": "AK backpack skin",
+      "group": "BACKPACK SKINS",
+      "gender": "",
+      "source": "CLOTHING LIST",
+      "row": 85
+    },
+    {
+      "name": "T-shirt",
       "group": "TOP",
       "gender": "for men",
       "source": "CLOTHING LIST",
       "row": 86
     },
     {
-      "name": "The West Pace jacket",
+      "name": "tapered classic turtleneck",
       "group": "TOP",
       "gender": "for men",
       "source": "CLOTHING LIST",
       "row": 87
     },
     {
-      "name": "top",
+      "name": "The West Pace jacket",
       "group": "TOP",
       "gender": "for men",
       "source": "CLOTHING LIST",
       "row": 88
     },
     {
-      "name": "trendy jacket",
+      "name": "top",
       "group": "TOP",
       "gender": "for men",
       "source": "CLOTHING LIST",
       "row": 89
     },
     {
-      "name": "Tron torso",
+      "name": "trendy jacket",
       "group": "TOP",
       "gender": "for men",
       "source": "CLOTHING LIST",
       "row": 90
     },
     {
-      "name": "TSUM collection 3 T-shirt",
+      "name": "Tron torso",
       "group": "TOP",
       "gender": "for men",
       "source": "CLOTHING LIST",
       "row": 91
     },
     {
-      "name": "TSUM collection T-shirt",
+      "name": "TSUM collection 3 T-shirt",
       "group": "TOP",
       "gender": "for men",
       "source": "CLOTHING LIST",
       "row": 92
     },
     {
-      "name": "Up-Green sweatshirt",
+      "name": "TSUM collection T-shirt",
       "group": "TOP",
       "gender": "for men",
       "source": "CLOTHING LIST",
       "row": 93
     },
     {
-      "name": "Up-Green T-shirt",
+      "name": "Up-Green sweatshirt",
       "group": "TOP",
       "gender": "for men",
       "source": "CLOTHING LIST",
       "row": 94
     },
     {
-      "name": "Valenciaga T-shirt",
+      "name": "Up-Green T-shirt",
       "group": "TOP",
       "gender": "for men",
       "source": "CLOTHING LIST",
       "row": 95
     },
     {
-      "name": "VIN T-shirt",
+      "name": "Valenciaga T-shirt",
       "group": "TOP",
       "gender": "for men",
       "source": "CLOTHING LIST",
       "row": 96
     },
     {
-      "name": "vintage Abibas Olympic jersey",
+      "name": "VIN T-shirt",
       "group": "TOP",
       "gender": "for men",
       "source": "CLOTHING LIST",
       "row": 97
     },
     {
-      "name": "wide print soccer T-shirt",
+      "name": "vintage Abibas Olympic jersey",
       "group": "TOP",
       "gender": "for men",
       "source": "CLOTHING LIST",
       "row": 98
     },
     {
-      "name": "wide printed football T-shirt",
+      "name": "wide print soccer T-shirt",
       "group": "TOP",
       "gender": "for men",
       "source": "CLOTHING LIST",
       "row": 99
     },
     {
+      "name": "wide printed football T-shirt",
+      "group": "TOP",
+      "gender": "for men",
+      "source": "CLOTHING LIST",
+      "row": 100
+    },
+    {
       "name": "Amire zip-up jumper",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 112
+      "row": 113
     },
     {
       "name": "Abibas leggings",
       "group": "PANTS",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 112
+      "row": 113
     },
     {
       "name": "denim heeled boots",
       "group": "SHOES",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 112
+      "row": 113
     },
     {
       "name": "beads accessory",
       "group": "ACCESSORY",
       "gender": "",
       "source": "CLOTHING LIST",
-      "row": 112
+      "row": 113
     },
     {
       "name": "branded headband",
       "group": "HEADWEAR/MASK",
       "gender": "",
       "source": "CLOTHING LIST",
-      "row": 112
+      "row": 113
     },
     {
       "name": "Volex watch",
       "group": "WATCH",
       "gender": "",
       "source": "CLOTHING LIST",
-      "row": 112
+      "row": 113
     },
     {
       "name": "asymmetrical austere dress",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 113
+      "row": 114
     },
     {
       "name": "belted pants",
       "group": "PANTS",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 113
+      "row": 114
     },
     {
       "name": "sporty boots",
       "group": "SHOES",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 113
+      "row": 114
     },
     {
       "name": "earrings",
       "group": "HEADWEAR/MASK",
       "gender": "",
       "source": "CLOTHING LIST",
-      "row": 113
+      "row": 114
     },
     {
       "name": "Volex 2 watch",
       "group": "WATCH",
       "gender": "",
       "source": "CLOTHING LIST",
-      "row": 113
+      "row": 114
     },
     {
       "name": "bandana top",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 114
+      "row": 115
     },
     {
       "name": "Gussi shorts",
       "group": "PANTS",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 114
+      "row": 115
     },
     {
       "name": "tall boots",
       "group": "SHOES",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 114
+      "row": 115
     },
     {
       "name": "navel piercing accessory",
       "group": "ACCESSORY",
       "gender": "",
       "source": "CLOTHING LIST",
-      "row": 114
+      "row": 115
     },
     {
       "name": "rabbit ears",
       "group": "HEADWEAR/MASK",
       "gender": "",
       "source": "CLOTHING LIST",
-      "row": 114
+      "row": 115
     },
     {
       "name": "body wrap top",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 115
+      "row": 116
     },
     {
       "name": "jeans",
       "group": "PANTS",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 115
+      "row": 116
     },
     {
       "name": "onelove chain",
       "group": "ACCESSORY",
       "gender": "",
       "source": "CLOTHING LIST",
-      "row": 115
+      "row": 116
     },
     {
       "name": "bomber jacket with luminous elements",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 116
+      "row": 117
     },
     {
       "name": "Muci shorts",
       "group": "PANTS",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 116
+      "row": 117
     },
     {
       "name": "calligraphy dress",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 117
+      "row": 118
     },
     {
       "name": "Nik shorts with leggings",
       "group": "PANTS",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 117
+      "row": 118
     },
     {
       "name": "collection 5 top",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 118
+      "row": 119
     },
     {
       "name": "Panel pants",
       "group": "PANTS",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 118
+      "row": 119
     },
     {
       "name": "corset top",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 119
+      "row": 120
     },
     {
       "name": "pants with belt",
       "group": "PANTS",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 119
+      "row": 120
     },
     {
       "name": "day dress",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 120
+      "row": 121
     },
     {
       "name": "ragged jeans",
       "group": "PANTS",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 120
+      "row": 121
     },
     {
       "name": "dress",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 121
+      "row": 122
     },
     {
       "name": "ripped pants with neon strips",
       "group": "PANTS",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 121
+      "row": 122
     },
     {
       "name": "dress with cutout",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 122
+      "row": 123
     },
     {
       "name": "S cargo pants",
       "group": "PANTS",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 122
+      "row": 123
     },
     {
       "name": "Essential suit top",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 123
+      "row": 124
     },
     {
       "name": "skirt",
       "group": "PANTS",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 123
+      "row": 124
     },
     {
       "name": "faution top",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 124
+      "row": 125
     },
     {
       "name": "skirt with tights",
       "group": "PANTS",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 124
+      "row": 125
     },
     {
       "name": "Kupreme dress",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 125
+      "row": 126
     },
     {
       "name": "unbuttoned jeans",
       "group": "PANTS",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 125
+      "row": 126
     },
     {
       "name": "long branded T-shirt",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 126
+      "row": 127
     },
     {
       "name": "love costume",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 127
+      "row": 128
     },
     {
       "name": "low dress",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 128
+      "row": 129
     },
     {
       "name": "luminous dress",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 129
+      "row": 130
     },
     {
       "name": "luminous LM Playboy sweatshirt",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 130
+      "row": 131
     },
     {
       "name": "Mikachu T-shirt",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 131
+      "row": 132
     },
     {
       "name": "motorcycle platform boots",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 132
+      "row": 133
     },
     {
       "name": "Murberry corset dress",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 133
+      "row": 134
     },
     {
       "name": "pullover with long sleeve",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 134
+      "row": 135
     },
     {
       "name": "short pullover",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 135
+      "row": 136
     },
     {
       "name": "sports top",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 136
+      "row": 137
     },
     {
       "name": "Spring set",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 137
+      "row": 138
     },
     {
       "name": "stylish suit",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 138
+      "row": 139
     },
     {
       "name": "summer bra",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 139
+      "row": 140
     },
     {
       "name": "summer top",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 140
+      "row": 141
     },
     {
       "name": "sweater dress",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 141
+      "row": 142
     },
     {
       "name": "top 2 outerwear",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 142
+      "row": 143
     },
     {
       "name": "top with chains",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 143
+      "row": 144
     },
     {
       "name": "topic pok",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 144
+      "row": 145
     },
     {
       "name": "Watch Me sweater",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 145
+      "row": 146
     },
     {
       "name": "wedding dress",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 146
+      "row": 147
     },
     {
       "name": "winter collection dress",
       "group": "TOP",
       "gender": "for women",
       "source": "CLOTHING LIST",
-      "row": 147
+      "row": 148
     },
     {
       "name": "red OFF luminous T-shirt",
@@ -7963,7 +8307,7 @@
       "raw": "VIP/s 1",
       "source": "ITEMS",
       "row": 5,
-      "plural": "VIPs 1"
+      "plural": "VIP 1"
     },
     {
       "name": "arena gift",
@@ -8069,7 +8413,7 @@
       "raw": "VIP/s 2",
       "source": "ITEMS",
       "row": 6,
-      "plural": "VIPs 2"
+      "plural": "VIP 2"
     },
     {
       "name": "attack juice",
@@ -9309,5 +9653,5 @@
       "game": "Bitkin"
     }
   ],
-  "source": "March 2026 Excel catalogue"
+  "source": "Updated workbook supplied 14 October 2026 (March 2026 title)"
 }

@@ -21,7 +21,8 @@ function assertMode(mode,allowed){if(!allowed.includes(mode))throw Error('This t
 function quantity(v){if(v===''||v===undefined||v===null)return null;const n=Number(String(v).replaceAll('.',''));if(!Number.isSafeInteger(n)||n<1)throw Error('Quantity must be a positive whole number.');return n;}
 function number(v,label='Number'){if(!/^\d+$/.test(String(v)))throw Error(`${label} must contain digits only.`);return String(v);}
 function safeLocation(v,business=false){if(!v)return '';const s=locations.find(x=>x.toLowerCase()===v.toLowerCase());if(!s)throw Error('Select a listed location.');if(!business&&/airport|\bmall\b/i.test(s))throw Error('This location is only allowed for business ads.');return s;}
-function selected(name,records,label,gender){const r=records.find(r=>r.name===name&&(!gender||!r.gender||r.gender===gender));if(!r)throw Error(`${label} not found in the catalogue. Submit proof of tradeability to LI.`);return r;}
+export const vehicleLabel=r=>r.oldNames?.length?`${r.name} (${r.oldNames[0]})`:r.name;
+function selected(name,records,label,gender){const matches=records.filter(r=>(r.name===name||(label==='Vehicle'&&(vehicleLabel(r)===name||r.oldNames?.includes(name))))&&(!gender||!r.gender||r.gender===gender));const r=label==='Vehicle'?(matches.length===1?matches[0]:null):matches[0];if(!r)throw Error(`${label} not found in the catalogue. Submit proof of tradeability to LI.`);return r;}
 export function makeAd(category,data,catalog){const warnings=[];let text;const mode=data.mode;
  if(category==='vehicle'){
   assertMode(mode,['Buying','Selling','Trading','Selling or trading']);let name;
